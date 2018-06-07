@@ -34,6 +34,12 @@ pipeline {
         }
       }
     }
+    stage('Checkpoint') {
+         agent none
+         steps {
+            checkpoint 'Checkpoint'
+         }
+      }
   }
   environment {
     MY_NAME = 'Mary'
