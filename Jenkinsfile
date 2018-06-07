@@ -8,7 +8,7 @@ pipeline {
         echo "Hello ${MY_NAME}!"
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
-        echo "Hello ${parameters.Name}!"
+        echo "Hello ${params.Name}!"
         sh 'java -version'
       }
     }
